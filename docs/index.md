@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Welcome to cowmoo.trade
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. Entertainment purposes only. No trade recommendations. We are not responsible for any spilt milk. 
 
-## Commands
+## Current Positions
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | Fetch resource  |
+| `PUT`       | Update resource |
+| `DELETE`    | Delete resource |
