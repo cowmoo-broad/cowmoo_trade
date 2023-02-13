@@ -2,7 +2,7 @@
 
 cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. Entertainment purposes only. No trade recommendations. We are not responsible for any spilt milk. 
 
-## ## Current Positions (02/12/2023, 19:01:53) 
+## ## Current Positions (02/12/2023, 19:13:59) 
  | Symbol                |   Position |   Avg. Cost |   Market Price |   UnrealizedPnL |
 |:----------------------|-----------:|------------:|---------------:|----------------:|
 | IBCID29120543         |         35 |   845.073   |     81.135     |        -1180.3  |
@@ -111,6 +111,7 @@ cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. E
 | SPX   230818P03650000 |          1 |  7845.71    |     84.99      |          653.29 |
 | SPX   230818P03675000 |          2 | 10334.4     |     89.3061    |        -2807.6  |
 | SPX   230818P03725000 |          1 |  9940.7     |     98.3812    |         -102.58 |
+
  ## Trailing 1 Year Performance 
   ```vegalite
  
