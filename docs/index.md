@@ -2,7 +2,7 @@
 
 cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. Entertainment purposes only. No trade recommendations. We are not responsible for any spilt milk. 
 
-## ## Current Positions (02/18/2023, 14:15:06) 
+## ## Current Positions (02/18/2023, 14:18:09) 
  | Symbol                |   Position |   Avg. Cost |   Market Price |   UnrealizedPnL |   RealizedPnL |
 |:----------------------|-----------:|------------:|---------------:|----------------:|--------------:|
 | IBCID29120543         |         35 |   845.073   |      81        |        -1227.55 |          0    |
@@ -195,81 +195,15 @@ cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. E
 ## Trailing 1 Month Performance 
 ```vegalite
 
-        {
-      "$schema": "https://vega.github.io/schema/vega/v5.json",
-      "description": "A basic line chart example.",
-      "width": 500,
-      "height": 200,
-      "padding": 5,
-
-      "data": [
-        {
-          "name": "table",
-          "values": 
-    [{"x": 240, "y": 437401.424184157}, {"x": 241, "y": 437947.474323057}, {"x": 242, "y": 429321.432893157}, {"x": 243, "y": 429995.591693157}, {"x": 244, "y": 431082.530493157}, {"x": 245, "y": 428733.599293157}, {"x": 246, "y": 427208.556661457}, {"x": 247, "y": 427031.537321557}, {"x": 248, "y": 431778.491220057}, {"x": 249, "y": 432459.634420057}, {"x": 250, "y": 428238.738870057}, {"x": 251, "y": 430305.042519057}, {"x": 252, "y": 431535.553399057}, {"x": 253, "y": 432015.265964257}, {"x": 254, "y": 429744.804016257}, {"x": 255, "y": 427236.386116257}, {"x": 256, "y": 428132.515116257}, {"x": 257, "y": 431424.394116257}, {"x": 258, "y": 435489.578016257}, {"x": 259, "y": 438118.487016257}, {"x": 260, "y": 435674.317716257}, {"x": 261, "y": 437953.805624157}]
-     }
-      ],
-
-      "scales": [
-        {
-          "name": "x",
-          "type": "point",
-          "range": "width",
-          "domain": {"data": "table", "field": "x"}
-        },
-        {
-          "name": "y",
-          "type": "linear",
-          "range": "height",
-          "nice": true,
-          "zero": true,
-          "domain": {"data": "table", "field": "y"}
-        },
-        {
-          "name": "color",
-          "type": "ordinal",
-          "range": "category",
-          "domain": {"data": "table", "field": "c"}
-        }
-      ],
-
-      "axes": [
-        {"orient": "bottom", "scale": "x"},
-        {"orient": "left", "scale": "y"}
-      ],
-
-      "marks": [
-        {
-          "type": "group",
-          "from": {
-            "facet": {
-              "name": "series",
-              "data": "table",
-              "groupby": "c"
-            }
-          },
-          "marks": [
-            {
-              "type": "line",
-              "from": {"data": "series"},
-              "encode": {
-                "enter": {
-                  "x": {"scale": "x", "field": "x"},
-                  "y": {"scale": "y", "field": "y"},
-                  "stroke": {"scale": "color", "field": "c"},
-                  "strokeWidth": {"value": 2}
-                },
-                "hover": {
-                  "strokeOpacity": {"value": 0.5}
-                }
-              }
-            }
-          ]
-        }
-      ], 
-      "encoding": {
-        "x": {"field": "x", "type": "quantitative"},
-        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [400000, 450000]}}
-      }
-    }
+    {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [{"x": 240, "y": 437401.424184157}, {"x": 241, "y": 437947.474323057}, {"x": 242, "y": 429321.432893157}, {"x": 243, "y": 429995.591693157}, {"x": 244, "y": 431082.530493157}, {"x": 245, "y": 428733.599293157}, {"x": 246, "y": 427208.556661457}, {"x": 247, "y": 427031.537321557}, {"x": 248, "y": 431778.491220057}, {"x": 249, "y": 432459.634420057}, {"x": 250, "y": 428238.738870057}, {"x": 251, "y": 430305.042519057}, {"x": 252, "y": 431535.553399057}, {"x": 253, "y": 432015.265964257}, {"x": 254, "y": 429744.804016257}, {"x": 255, "y": 427236.386116257}, {"x": 256, "y": 428132.515116257}, {"x": 257, "y": 431424.394116257}, {"x": 258, "y": 435489.578016257}, {"x": 259, "y": 438118.487016257}, {"x": 260, "y": 435674.317716257}, {"x": 261, "y": 437953.805624157}]
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "x", "type": "quantitative"},
+    "y": {"field": "y", "type": "quantitative", "scale": {"domain": [400000, 500000]}}
+  }
+  }
 ```
