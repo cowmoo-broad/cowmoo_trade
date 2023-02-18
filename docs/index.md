@@ -2,7 +2,7 @@
 
 cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. Entertainment purposes only. No trade recommendations. We are not responsible for any spilt milk. 
 
-## ## Current Positions (02/18/2023, 13:30:35) 
+## ## Current Positions (02/18/2023, 14:15:06) 
  | Symbol                |   Position |   Avg. Cost |   Market Price |   UnrealizedPnL |   RealizedPnL |
 |:----------------------|-----------:|------------:|---------------:|----------------:|--------------:|
 | IBCID29120543         |         35 |   845.073   |      81        |        -1227.55 |          0    |
@@ -184,7 +184,11 @@ cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. E
             }
           ]
         }
-      ]
+      ], 
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [250000, 450000]}}
+      }
     }
 ```
 
@@ -262,6 +266,10 @@ cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. E
             }
           ]
         }
-      ]
+      ], 
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative", "scale": {"domain": [400000, 450000]}}
+      }
     }
 ```
