@@ -2,7 +2,7 @@
 
 cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. Entertainment purposes only. No trade recommendations. We are not responsible for any spilt milk. 
 
-## ## Current Positions (02/18/2023, 13:22:25) 
+## ## Current Positions (02/18/2023, 13:26:57) 
  | Symbol                |   Position |   Avg. Cost |   Market Price |   UnrealizedPnL |   RealizedPnL |
 |:----------------------|-----------:|------------:|---------------:|----------------:|--------------:|
 | IBCID29120543         |         35 |   845.073   |      81        |        -1227.55 |          0    |
@@ -186,4 +186,9 @@ cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. E
         }
       ]
     }
+```
+
+## Trailing 1 Month Performance 
+```vegalite
+[{"x": 0, "y": 302018.763627301}, {"x": 1, "y": 297643.153372801}, {"x": 2, "y": 297643.153372801}, {"x": 3, "y": 301408.360172801}, {"x": 4, "y": 297465.852209301}, {"x": 5, "y": 300914.489556901}, {"x": 6, "y": 303347.239554501}, {"x": 7, "y": 304051.459554501}, {"x": 8, "y": 294390.054597201}, {"x": 9, "y": 297789.146481801}, {"x": 10, "y": 297969.489870401}, {"x": 11, "y": 296326.477270401}, {"x": 12, "y": 287337.097908401}, {"x": 13, "y": 294390.372233701}, {"x": 14, "y": 300736.914133701}, {"x": 15, "y": 301824.849633701}, {"x": 16, "y": 302332.921751201}, {"x": 17, "y": 301034.817298201}, {"x": 18, "y": 304164.312798201}, {"x": 19, "y": 313037.545490101}, {"x": 20, "y": 318470.816614801}, {"x": 21, "y": 320883.900155301}]
 ```
