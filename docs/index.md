@@ -2,7 +2,7 @@
 
 cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. Entertainment purposes only. No trade recommendations. We are not responsible for any spilt milk. 
 
-## ## Current Positions (02/18/2023, 13:26:57) 
+## ## Current Positions (02/18/2023, 13:29:10) 
  | Symbol                |   Position |   Avg. Cost |   Market Price |   UnrealizedPnL |   RealizedPnL |
 |:----------------------|-----------:|------------:|---------------:|----------------:|--------------:|
 | IBCID29120543         |         35 |   845.073   |      81        |        -1227.55 |          0    |
@@ -190,5 +190,78 @@ cowmoo.trade is a portfolio and trades tracker for cowmoomoo Milk Capital LLC. E
 
 ## Trailing 1 Month Performance 
 ```vegalite
-[{"x": 0, "y": 302018.763627301}, {"x": 1, "y": 297643.153372801}, {"x": 2, "y": 297643.153372801}, {"x": 3, "y": 301408.360172801}, {"x": 4, "y": 297465.852209301}, {"x": 5, "y": 300914.489556901}, {"x": 6, "y": 303347.239554501}, {"x": 7, "y": 304051.459554501}, {"x": 8, "y": 294390.054597201}, {"x": 9, "y": 297789.146481801}, {"x": 10, "y": 297969.489870401}, {"x": 11, "y": 296326.477270401}, {"x": 12, "y": 287337.097908401}, {"x": 13, "y": 294390.372233701}, {"x": 14, "y": 300736.914133701}, {"x": 15, "y": 301824.849633701}, {"x": 16, "y": 302332.921751201}, {"x": 17, "y": 301034.817298201}, {"x": 18, "y": 304164.312798201}, {"x": 19, "y": 313037.545490101}, {"x": 20, "y": 318470.816614801}, {"x": 21, "y": 320883.900155301}]
+
+        {
+      "$schema": "https://vega.github.io/schema/vega/v5.json",
+      "description": "A basic line chart example.",
+      "width": 500,
+      "height": 200,
+      "padding": 5,
+
+      "data": [
+        {
+          "name": "table",
+          "values": 
+    [{"x": 0, "y": 302018.763627301}, {"x": 1, "y": 297643.153372801}, {"x": 2, "y": 297643.153372801}, {"x": 3, "y": 301408.360172801}, {"x": 4, "y": 297465.852209301}, {"x": 5, "y": 300914.489556901}, {"x": 6, "y": 303347.239554501}, {"x": 7, "y": 304051.459554501}, {"x": 8, "y": 294390.054597201}, {"x": 9, "y": 297789.146481801}, {"x": 10, "y": 297969.489870401}, {"x": 11, "y": 296326.477270401}, {"x": 12, "y": 287337.097908401}, {"x": 13, "y": 294390.372233701}, {"x": 14, "y": 300736.914133701}, {"x": 15, "y": 301824.849633701}, {"x": 16, "y": 302332.921751201}, {"x": 17, "y": 301034.817298201}, {"x": 18, "y": 304164.312798201}, {"x": 19, "y": 313037.545490101}, {"x": 20, "y": 318470.816614801}, {"x": 21, "y": 320883.900155301}]
+     }
+      ],
+
+      "scales": [
+        {
+          "name": "x",
+          "type": "point",
+          "range": "width",
+          "domain": {"data": "table", "field": "x"}
+        },
+        {
+          "name": "y",
+          "type": "linear",
+          "range": "height",
+          "nice": true,
+          "zero": true,
+          "domain": {"data": "table", "field": "y"}
+        },
+        {
+          "name": "color",
+          "type": "ordinal",
+          "range": "category",
+          "domain": {"data": "table", "field": "c"}
+        }
+      ],
+
+      "axes": [
+        {"orient": "bottom", "scale": "x"},
+        {"orient": "left", "scale": "y"}
+      ],
+
+      "marks": [
+        {
+          "type": "group",
+          "from": {
+            "facet": {
+              "name": "series",
+              "data": "table",
+              "groupby": "c"
+            }
+          },
+          "marks": [
+            {
+              "type": "line",
+              "from": {"data": "series"},
+              "encode": {
+                "enter": {
+                  "x": {"scale": "x", "field": "x"},
+                  "y": {"scale": "y", "field": "y"},
+                  "stroke": {"scale": "color", "field": "c"},
+                  "strokeWidth": {"value": 2}
+                },
+                "hover": {
+                  "strokeOpacity": {"value": 0.5}
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
 ```
