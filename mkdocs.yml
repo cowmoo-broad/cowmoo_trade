@@ -14,6 +14,9 @@ markdown_extensions:
         - name: vegalite
           class: vegalite
           format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+nav:
+    - 'index.md'
+    - 'QuantStats Tear-sheet': 'quantstats-tearsheet.html'
 
 theme:
   name: material
