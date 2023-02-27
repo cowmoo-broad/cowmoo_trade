@@ -18,7 +18,7 @@ markdown_extensions:
 nav:
     - 'index.md'
     - 'QuantStats Tear-sheet': 'quantstats-tearsheet.html'
-    - 'Backtest 1 (Broken Wing Butterfly)': 'strategy_broken_wing_butterfly.ipynb'
+    - 'Backtest 1 (Broken Wing Butterfly)': 'backtest.md'
 
 theme:
   name: material
