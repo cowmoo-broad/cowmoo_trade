@@ -1,0 +1,722 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>QuantStats Tear-sheet - cowmoo.trade</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quantstats-tear-sheet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="cowmoo.trade" class="md-header__button md-logo" aria-label="cowmoo.trade" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            cowmoo.trade
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              QuantStats Tear-sheet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="cowmoo.trade" class="md-nav__button md-logo" aria-label="cowmoo.trade" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    cowmoo.trade
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to cowmoo.trade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quantstats-tearsheet.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuantStats Tear-sheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backtest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backtest 1 (Broken Wing Butterfly)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-run-02192023-152747" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Run (02/19/2023, 15:27:47)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="quantstats-tear-sheet">QuantStats Tear-sheet</h1>
+<p>The smell test for the milk...</p>
+<h2 id="current-run-02192023-152747">Current Run (02/19/2023, 15:27:47)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Strategy</th>
+<th style="text-align: left;">Benchmark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Start Period</td>
+<td style="text-align: left;">2022-02-17</td>
+<td style="text-align: left;">2022-02-17</td>
+</tr>
+<tr>
+<td style="text-align: left;">End Period</td>
+<td style="text-align: left;">2023-02-17</td>
+<td style="text-align: left;">2023-02-17</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk-Free Rate</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Time in Market</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">0.96</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cumulative Return</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAGR﹪</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sharpe</td>
+<td style="text-align: left;">2.07</td>
+<td style="text-align: left;">-0.11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prob. Sharpe Ratio</td>
+<td style="text-align: left;">0.97</td>
+<td style="text-align: left;">0.46</td>
+</tr>
+<tr>
+<td style="text-align: left;">Smart Sharpe</td>
+<td style="text-align: left;">1.75</td>
+<td style="text-align: left;">-0.09</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sortino</td>
+<td style="text-align: left;">2.86</td>
+<td style="text-align: left;">-0.15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Smart Sortino</td>
+<td style="text-align: left;">2.41</td>
+<td style="text-align: left;">-0.13</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sortino/√2</td>
+<td style="text-align: left;">2.02</td>
+<td style="text-align: left;">-0.11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Smart Sortino/√2</td>
+<td style="text-align: left;">1.7</td>
+<td style="text-align: left;">-0.09</td>
+</tr>
+<tr>
+<td style="text-align: left;">Omega</td>
+<td style="text-align: left;">1.47</td>
+<td style="text-align: left;">1.47</td>
+</tr>
+<tr>
+<td style="text-align: left;">Max Drawdown</td>
+<td style="text-align: left;">-0.08</td>
+<td style="text-align: left;">-0.22</td>
+</tr>
+<tr>
+<td style="text-align: left;">Longest DD Days</td>
+<td style="text-align: left;">62</td>
+<td style="text-align: left;">324</td>
+</tr>
+<tr>
+<td style="text-align: left;">Volatility (ann.)</td>
+<td style="text-align: left;">0.18</td>
+<td style="text-align: left;">0.23</td>
+</tr>
+<tr>
+<td style="text-align: left;">R^2</td>
+<td style="text-align: left;">0.2</td>
+<td style="text-align: left;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Information Ratio</td>
+<td style="text-align: left;">0.11</td>
+<td style="text-align: left;">0.11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Calmar</td>
+<td style="text-align: left;">5.42</td>
+<td style="text-align: left;">-0.24</td>
+</tr>
+<tr>
+<td style="text-align: left;">Skew</td>
+<td style="text-align: left;">-1.1</td>
+<td style="text-align: left;">-0.01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kurtosis</td>
+<td style="text-align: left;">4.77</td>
+<td style="text-align: left;">0.63</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expected Daily</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expected Monthly</td>
+<td style="text-align: left;">0.03</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expected Yearly</td>
+<td style="text-align: left;">0.2</td>
+<td style="text-align: left;">-0.03</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kelly Criterion</td>
+<td style="text-align: left;">0.17</td>
+<td style="text-align: left;">-0.23</td>
+</tr>
+<tr>
+<td style="text-align: left;">Risk of Ruin</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Daily Value-at-Risk</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">-0.02</td>
+</tr>
+<tr>
+<td style="text-align: left;">Expected Shortfall (cVaR)</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">-0.02</td>
+</tr>
+<tr>
+<td style="text-align: left;">Max Consecutive Wins</td>
+<td style="text-align: left;">12.0</td>
+<td style="text-align: left;">4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Max Consecutive Losses</td>
+<td style="text-align: left;">4.0</td>
+<td style="text-align: left;">6.0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gain/Pain Ratio</td>
+<td style="text-align: left;">0.47</td>
+<td style="text-align: left;">-0.02</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gain/Pain (1M)</td>
+<td style="text-align: left;">7.39</td>
+<td style="text-align: left;">-0.07</td>
+</tr>
+<tr>
+<td style="text-align: left;">Payoff Ratio</td>
+<td style="text-align: left;">0.83</td>
+<td style="text-align: left;">0.8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Profit Factor</td>
+<td style="text-align: left;">1.47</td>
+<td style="text-align: left;">0.98</td>
+</tr>
+<tr>
+<td style="text-align: left;">Common Sense Ratio</td>
+<td style="text-align: left;">1.68</td>
+<td style="text-align: left;">0.96</td>
+</tr>
+<tr>
+<td style="text-align: left;">CPC Index</td>
+<td style="text-align: left;">0.76</td>
+<td style="text-align: left;">0.36</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tail Ratio</td>
+<td style="text-align: left;">1.14</td>
+<td style="text-align: left;">0.98</td>
+</tr>
+<tr>
+<td style="text-align: left;">Outlier Win Ratio</td>
+<td style="text-align: left;">4.26</td>
+<td style="text-align: left;">2.63</td>
+</tr>
+<tr>
+<td style="text-align: left;">Outlier Loss Ratio</td>
+<td style="text-align: left;">4.36</td>
+<td style="text-align: left;">3.46</td>
+</tr>
+<tr>
+<td style="text-align: left;">MTD</td>
+<td style="text-align: left;">0.01</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">3M</td>
+<td style="text-align: left;">0.13</td>
+<td style="text-align: left;">0.03</td>
+</tr>
+<tr>
+<td style="text-align: left;">6M</td>
+<td style="text-align: left;">0.17</td>
+<td style="text-align: left;">-0.04</td>
+</tr>
+<tr>
+<td style="text-align: left;">YTD</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">0.06</td>
+</tr>
+<tr>
+<td style="text-align: left;">1Y</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">3Y (ann.)</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">5Y (ann.)</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">10Y (ann.)</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">All-time (ann.)</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">-0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">Best Day</td>
+<td style="text-align: left;">0.04</td>
+<td style="text-align: left;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">Worst Day</td>
+<td style="text-align: left;">-0.05</td>
+<td style="text-align: left;">-0.04</td>
+</tr>
+<tr>
+<td style="text-align: left;">Best Month</td>
+<td style="text-align: left;">0.1</td>
+<td style="text-align: left;">0.09</td>
+</tr>
+<tr>
+<td style="text-align: left;">Worst Month</td>
+<td style="text-align: left;">-0.04</td>
+<td style="text-align: left;">-0.09</td>
+</tr>
+<tr>
+<td style="text-align: left;">Best Year</td>
+<td style="text-align: left;">0.42</td>
+<td style="text-align: left;">0.06</td>
+</tr>
+<tr>
+<td style="text-align: left;">Worst Year</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">-0.11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avg. Drawdown</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">-0.06</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avg. Drawdown Days</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">58</td>
+</tr>
+<tr>
+<td style="text-align: left;">Recovery Factor</td>
+<td style="text-align: left;">5.42</td>
+<td style="text-align: left;">-0.24</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ulcer Index</td>
+<td style="text-align: left;">0.03</td>
+<td style="text-align: left;">0.13</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serenity Index</td>
+<td style="text-align: left;">4.32</td>
+<td style="text-align: left;">-0.03</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avg. Up Month</td>
+<td style="text-align: left;">0.05</td>
+<td style="text-align: left;">0.05</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avg. Down Month</td>
+<td style="text-align: left;">-0.03</td>
+<td style="text-align: left;">-0.09</td>
+</tr>
+<tr>
+<td style="text-align: left;">Win Days</td>
+<td style="text-align: left;">0.62</td>
+<td style="text-align: left;">0.45</td>
+</tr>
+<tr>
+<td style="text-align: left;">Win Month</td>
+<td style="text-align: left;">0.85</td>
+<td style="text-align: left;">0.54</td>
+</tr>
+<tr>
+<td style="text-align: left;">Win Quarter</td>
+<td style="text-align: left;">0.8</td>
+<td style="text-align: left;">0.6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Win Year</td>
+<td style="text-align: left;">1.0</td>
+<td style="text-align: left;">0.5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Beta</td>
+<td style="text-align: left;">0.35</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alpha</td>
+<td style="text-align: left;">0.38</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Correlation</td>
+<td style="text-align: left;">0.45%</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Treynor Ratio</td>
+<td style="text-align: left;">1.29%</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../js/mkdocs-charts-plugin.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      
+    
+  </body>
+</html>
